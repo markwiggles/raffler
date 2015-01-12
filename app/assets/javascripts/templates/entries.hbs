@@ -1,0 +1,24 @@
+<div class="container">
+	
+	<p>{{input value=newEntryName action="addEntry"}}</p>
+
+	<p>
+		<button {{action "drawWinner"}}>Draw Winner</button>
+	</p>
+	
+</div>
+
+
+<ul>
+	{{#each entry in controller}}
+	<li>
+		{{entry.name}}
+		{{#if entry.winner}}
+		{{!-- looks for the winner and highlight properties on the entry object and only sets these in the class if the property values are true --}}
+		<span {{bind-attr class="entry.winner:winner entry.highlight:highlight"}}>WINNER</span>
+		{{/if}}
+		
+	</li>
+	{{/each}}
+</ul>
+
