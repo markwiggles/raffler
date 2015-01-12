@@ -5,10 +5,9 @@ EmberRaffler.EntriesController = Ember.ArrayController.extend({
 
 			//Create the entry record
 			var entry = this.store.createRecord('entry', {
-				name: this.get('newEntryName')
+				name: this.get('newEntryName'),
+				winner: false
 			});
-
-			console.log('ENTRY: ' + entry.get('name') );
 			// Save the changes
 			entry.save();
 			this.set('newEntryName', "");
@@ -20,7 +19,6 @@ EmberRaffler.EntriesController = Ember.ArrayController.extend({
 
 			//loop through pool and only keep any entries with winner = false
 			pool = this.rejectProperty('winner');
-
 			//set each of the items with highlight = false
 			this.setEach('highlight', false);
 
@@ -29,11 +27,8 @@ EmberRaffler.EntriesController = Ember.ArrayController.extend({
 				entry = pool[index];
 				entry.set('winner', true);
 				entry.set('highlight', true);
-
 				// Save the changes
-				entry.save();
-
-				
+				entry.save();				
 			}
 		}
 	}

@@ -9,14 +9,7 @@ EmberRaffler.Router.map(function() {
 
 EmberRaffler.EntriesRoute = Ember.Route.extend({
 
-	//more concise
 	model: function() {
 		return this.store.find('entry');
-	},
-
-	setupController: function(controller, model) {
-
-		controller.set('content', model);
 	}
-
 });
