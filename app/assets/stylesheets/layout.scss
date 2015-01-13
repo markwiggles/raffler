@@ -57,6 +57,10 @@ form input[type='submit'], button {
 button {
   margin: 20px auto;
 }
+button[disabled=disabled], button:disabled {
+  color: red;
+  }
+
 
 h1 {
   text-align: center;

@@ -11,8 +11,8 @@ EmberRaffler.EntriesController = Ember.ArrayController.extend({
 			// Save the changes
 			entry.save();
 			this.set('newEntryName', "");
-
 		},
+
 		drawWinner: function() {
 
 			var pool, entry;
@@ -28,8 +28,16 @@ EmberRaffler.EntriesController = Ember.ArrayController.extend({
 				entry.set('winner', true);
 				entry.set('highlight', true);
 				// Save the changes
-				entry.save();				
+				entry.save();
 			}
 		}
-	}
+	},
+
+	allWinners: function() {
+
+			console.log('Winner: ' + this.everyProperty('winner'));
+
+			return this.everyProperty('winner');
+
+		}.property('@each.winner')
 });

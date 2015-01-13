@@ -1,9 +1,10 @@
 <div class="container">
 	
-	<p>{{input value=newEntryName action="addEntry"}}</p>
+	<p>{{input value=newEntryName width="50"}}
+	<input type="submit" value="Add" {{action addEntry}} class="btn btn-primary"></p>
 
 	<p>
-		<button {{action "drawWinner"}}>Draw Winner</button>
+		<button {{action "drawWinner"}} {{bind-attr disabled="allWinners"}}>Draw Winner</button>
 	</p>
 	
 </div>
