@@ -1,10 +1,13 @@
 <div class="container">
 	
-	<p>{{input value=newEntryName width="50"}}
-	<input type="submit" value="Add" {{action addEntry}} class="btn btn-primary"></p>
-
+	
+	<form>
+		<p>{{input value=newEntryName width="50"}}
+		<input type="submit" value="Add" {{action addEntry}} class="btn btn-primary"></p>
+	</form>
+	
 	<p>
-		<button {{action "drawWinner"}} {{bind-attr disabled="allWinners"}}>Draw Winner</button>
+	<button {{action "drawWinner"}} {{bind-attr disabled="allWinners"}}>Draw Winner</button>
 	</p>
 	
 </div>
@@ -22,4 +25,3 @@
 	</li>
 	{{/each}}
 </ul>
-
