@@ -35,8 +35,6 @@ EmberRaffler.EntriesController = Ember.ArrayController.extend({
 
 	allWinners: function() {
 
-			console.log('Winner: ' + this.everyProperty('winner'));
-
 			return this.everyProperty('winner');
 
 		}.property('@each.winner')

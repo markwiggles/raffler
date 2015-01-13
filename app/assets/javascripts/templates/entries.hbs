@@ -1,10 +1,7 @@
 <div class="container">
 	
 	
-	<form>
-		<p>{{input value=newEntryName width="50"}}
-		<input type="submit" value="Add" {{action addEntry}} class="btn btn-primary"></p>
-	</form>
+{{view EmberRaffler.NewEntryView}}
 	
 	<p>
 	<button {{action "drawWinner"}} {{bind-attr disabled="allWinners"}}>Draw Winner</button>
