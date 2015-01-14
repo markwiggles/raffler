@@ -5,7 +5,7 @@ This is the Railscast project built using Emberjs frontend and Rails backend.
 Note:
 
 - Coffeescript used in the video has been converted to plain Javascript
-- Deprecated code updated as at January 15, 2014 and versions below
+- Deprecated code updated as at January 15, 2014 and in line with versions below
 
 <tt>Versions used:</tt>
 * Ember 1.9.1
