@@ -4,14 +4,14 @@ EmberRaffler.NewEntryView = Ember.View.extend({
 
 	tagName: 'form',
 
-	// action when the submit button is clicked
-	// - trigger (send) the addEntry function in the controller, passing 'newentryName'
+	/* action when the submit button is clicked
+	 - trigger (send) the addEntry function in the controller, passing 'newentryName' */
 	submit: function() {
 
-		this.get('controller').send('addEntry', this.get('newEntryName'));
-
-		console.log('NAME: ' + this.get('controller').get('newEntryName'));
-		this.set('newEntryName', "");
+		var cntrl = this.get('controller');
+		cntrl.send('addEntry', cntrl.get('newEntryName'));
+		cntrl.set('newEntryName', "");
 		return false;
 	}
 });
+
