@@ -1,16 +1,15 @@
 EmberRaffler.EntriesController = Ember.ArrayController.extend({
 
 	actions: {
-		addEntry: function() {
+		addEntry: function(entry_name) {
 
 			//Create the entry record
 			var entry = this.store.createRecord('entry', {
-				name: this.get('newEntryName'),
+				name: entry_name,
 				winner: false
 			});
 			// Save the changes
-			entry.save();
-			this.set('newEntryName', "");
+			entry.save();			
 		},
 
 		drawWinner: function() {
@@ -34,8 +33,6 @@ EmberRaffler.EntriesController = Ember.ArrayController.extend({
 	},
 
 	allWinners: function() {
-
 			return this.everyProperty('winner');
-
 		}.property('@each.winner')
 });
