@@ -13,4 +13,6 @@ Note:
 * Handlebars 2.0.0
 * jQuery 1.11.2
 
+<tt>http://railscasts.com</tt>
+
 
