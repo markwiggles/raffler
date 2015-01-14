@@ -1,6 +1,6 @@
 == Ember raffler
 
-This is the Railscast <a src= "http://railscasts.com/">Railscast</a>
+This is the <a href="http://railscasts.com/">Railscast</a>
 
 Things you may want to cover:
 
