@@ -8,8 +8,8 @@ Note:
 - Code updated removing deprecations as at January 15, 2014
 
 Versions used:
-Ember 1.9.1
-Ember Data 1.0.0-beta.14.1
-Handlebars 2.0.0
-jQuery 1.11.2
+* Ember 1.9.1
+* Ember Data 1.0.0-beta.14.1
+* Handlebars 2.0.0
+* jQuery 1.11.2
 
