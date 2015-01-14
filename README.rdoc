@@ -1,6 +1,6 @@
 == Ember raffler
 
-This is the <a href="http://railscasts.com/">Railscast</a>
+This is the "http://railscasts.com/"> project built using Emberjs.
 
 Things you may want to cover:
 
