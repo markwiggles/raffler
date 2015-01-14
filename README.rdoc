@@ -1,27 +1,15 @@
 == Ember raffler
 
-This is the "http://railscasts.com/"> project built using Emberjs.
+This is the Railscast project built using Emberjs.
 
-Things you may want to cover:
+Note:
 
-* Ruby version
+- Javascript used as opposed to the Coffeescript in the video
+- Code updated removing deprecations as at January 15, 2014
 
-* System dependencies
+Versions used:
+Ember 1.9.1
+Ember Data 1.0.0-beta.14.1
+Handlebars 2.0.0
+jQuery 1.11.2
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
