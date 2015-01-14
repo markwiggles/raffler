@@ -6,11 +6,11 @@ Note:
 
 - Javascript used as opposed to the Coffeescript in the video
 - Code updated removing deprecations as at January 15, 2014
-<tt>
-Versions used:
+
+<tt>Versions used:
 * Ember 1.9.1
 * Ember Data 1.0.0-beta.14.1
 * Handlebars 2.0.0
-* jQuery 1.11.2
-</tt>
+* jQuery 1.11.2</tt>
+
 
